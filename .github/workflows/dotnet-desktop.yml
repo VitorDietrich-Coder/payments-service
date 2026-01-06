@@ -39,7 +39,7 @@ jobs:
     - name: Executar testes
       run: |
         dotnet test Payments.Microservice.Tests/Payments.Microservice.Tests.csproj --configuration Debug --verbosity normal
-
+        
   push:
     name: 🚀 Docker Build & Push
     runs-on: ubuntu-latest
