@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36511.14 d17.14
+VisualStudioVersion = 17.14.36511.14
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments.Microservice.API", "Payments.Microservice.API.csproj", "{FE9FC660-F5B3-482E-ABEB-D5A8FFB10D7B}"
 EndProject
@@ -22,6 +22,14 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments.Microservice.Infrastructure", "..\Payments.Microservice.Infrastructure\Payments.Microservice.Infrastructure.csproj", "{D2EE91A6-35BD-4001-B080-E76780F77586}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments.Microservice.Tests", "..\Payments.Microservice.Tests\Payments.Microservice.Tests.csproj", "{353BBDEE-7F48-4606-8655-581EC8C55874}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contracts", "Contracts", "{5833F6F0-84AA-4650-A433-A44B12BBBCF3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments.Contracts", "..\Payments.Contracts\Payments.Contracts.csproj", "{6FF2EF12-BB8A-49A5-9475-A71CEF2B3595}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{693FFEC4-2635-4F3B-BDD2-E007EB6A009E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Payments.Microservice.shared", "..\Payments.Microservice.shared\Payments.Microservice.shared.csproj", "{AD42A3BC-AE2D-427C-8A8B-F04E3B16DD21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +57,14 @@ Global
 		{353BBDEE-7F48-4606-8655-581EC8C55874}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{353BBDEE-7F48-4606-8655-581EC8C55874}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{353BBDEE-7F48-4606-8655-581EC8C55874}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF2EF12-BB8A-49A5-9475-A71CEF2B3595}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF2EF12-BB8A-49A5-9475-A71CEF2B3595}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF2EF12-BB8A-49A5-9475-A71CEF2B3595}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF2EF12-BB8A-49A5-9475-A71CEF2B3595}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD42A3BC-AE2D-427C-8A8B-F04E3B16DD21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD42A3BC-AE2D-427C-8A8B-F04E3B16DD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD42A3BC-AE2D-427C-8A8B-F04E3B16DD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD42A3BC-AE2D-427C-8A8B-F04E3B16DD21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +75,8 @@ Global
 		{E6B384BC-D31D-4F0C-9FA0-C9A559972743} = {F327F48C-6F13-4ABE-BFF0-956F9E646D3E}
 		{D2EE91A6-35BD-4001-B080-E76780F77586} = {B981872D-88CA-44D8-9E96-4F0C38DEFE0A}
 		{353BBDEE-7F48-4606-8655-581EC8C55874} = {8D0BD10A-D140-4D68-ADEA-1FD45AD49677}
+		{6FF2EF12-BB8A-49A5-9475-A71CEF2B3595} = {5833F6F0-84AA-4650-A433-A44B12BBBCF3}
+		{AD42A3BC-AE2D-427C-8A8B-F04E3B16DD21} = {693FFEC4-2635-4F3B-BDD2-E007EB6A009E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8F5880D-A773-4790-A4AF-8C89D530AE07}

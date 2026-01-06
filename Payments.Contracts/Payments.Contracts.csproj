@@ -10,8 +10,4 @@
     <PackageReference Include="Abp" Version="10.3.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\Payments.Microservice.shared\Payments.Microservice.shared.csproj" />
-  </ItemGroup>
-
 </Project>
