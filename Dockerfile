@@ -15,24 +15,24 @@ ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 
 # Copiar csproj (cache de restore)
-COPY Payments.Microservice.API/Games.Microservice.API.csproj Games.Microservice.API/
-COPY Payments.Microservice.Application/Games.Microservice.Application.csproj Games.Microservice.Application/
-COPY Payments.Microservice.Domain/Games.Microservice.Domain.csproj Games.Microservice.Domain/
-COPY Payments.Microservice.Infrastructure/Games.Microservice.Infrastructure.csproj Games.Microservice.Infrastructure/
+COPY Payments.Microservice.API/Payments.Microservice.API.csproj Payments.Microservice.API/
+COPY Payments.Microservice.Application/Payments.Microservice.Application.csproj Payments.Microservice.Application/
+COPY Payments.Microservice.Domain/Payments.Microservice.Domain.csproj Payments.Microservice.Domain/
+COPY Payments.Microservice.Infrastructure/Payments.Microservice.Infrastructure.csproj Payments.Microservice.Infrastructure/
 COPY Payments.Microservice.shared/Payments.Microservice.shared.csproj Payments.Microservice.shared/
 COPY Payments.Contracts/Payments.Contracts.csproj Payments.Contracts/
 
-RUN dotnet restore Games.Microservice.API/Games.Microservice.API.csproj
+RUN dotnet restore Payments.Microservice.API/Payments.Microservice.API.csproj
 
 # Copiar todo o código
 COPY . .
 
 # Build
-WORKDIR /src/Games.Microservice.API
-RUN dotnet build Games.Microservice.API.csproj -c $BUILD_CONFIGURATION -o /app/build
+WORKDIR /src/Payments.Microservice.API
+RUN dotnet build Payments.Microservice.API.csproj -c $BUILD_CONFIGURATION -o /app/build
 
 # Publish
-RUN dotnet publish Games.Microservice.API.csproj \
+RUN dotnet publish Payments.Microservice.API.csproj \
     -c $BUILD_CONFIGURATION \
     -o /app/publish \
     /p:UseAppHost=false
