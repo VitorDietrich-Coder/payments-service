@@ -44,7 +44,7 @@ FROM mcr.microsoft.com/dotnet/sdk:9.0 AS migrator
 WORKDIR /src
 
 COPY . .
-WORKDIR /src/Games.Microservice.API
+WORKDIR /src/Payments.Microservice.API
 
 RUN dotnet tool install --global dotnet-ef --version 9.0.0
 ENV PATH="$PATH:/root/.dotnet/tools"
@@ -57,4 +57,4 @@ ENTRYPOINT ["dotnet", "ef", "database", "update", "--no-build"]
 FROM base AS final
 WORKDIR /app
 COPY --from=build /app/publish .
-ENTRYPOINT ["dotnet", "Users.Microservice.API.dll"]
+ENTRYPOINT ["dotnet", "Payments.Microservice.API.dll"]
