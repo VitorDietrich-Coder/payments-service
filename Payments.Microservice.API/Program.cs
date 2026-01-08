@@ -9,20 +9,10 @@ using Payments.Microservice.Infrastructure.EventStore;
 using Payments.Microservice.Infrastructure.Messaging;
 using Payments.Microservice.Infrastructure.Persistence;
 using Serilog;
-using System.Threading.Channels;
 using Users.Microservice.API.Extensions;
 
 
 var builder = WebApplication.CreateBuilder(args);
-
-
-
-
-builder.Configuration
-    .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true)
-    .AddEnvironmentVariables();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 
