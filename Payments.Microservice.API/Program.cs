@@ -9,6 +9,7 @@ using Payments.Microservice.Infrastructure.EventStore;
 using Payments.Microservice.Infrastructure.Messaging;
 using Payments.Microservice.Infrastructure.Persistence;
 using Serilog;
+
 using Users.Microservice.API.Extensions;
 
 
