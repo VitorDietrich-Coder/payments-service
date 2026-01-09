@@ -1,4 +1,4 @@
-# 🎮 FGC – Paymente Micro Service
+# 🎮 FGC – Payments Micro Service
 
 Repositório oficial do **FIAP Cloud Games (FGC)**, API backend desenvolvida em **.NET 9** como parte do **Tech Challenge FIAP – Fase 3** da FIAP.
 
