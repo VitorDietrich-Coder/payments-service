@@ -1,6 +1,7 @@
 ﻿ 
 using Microsoft.Extensions.Logging;
 using Payments.Contracts.Events;
+using Payments.Microservice.Domain.Enums;
 using Payments.Microservice.Domain.Interfaces;
 using Payments.Microservice.Domain.ValueObjects;
  
@@ -42,6 +43,7 @@ namespace Payments.Microservice.Application.Handlers
             await _unitOfWork.CommitAsync(cancellationToken);
 
             payment.Complete();
+            payment.Status = PaymentStatus.Completed;
 
             await _repository.UpdateAsync(payment);
 
