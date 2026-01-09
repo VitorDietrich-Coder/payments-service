@@ -1,12 +1,10 @@
-# payments-service
+# 🎮 FGC – Paymente Micro Service
 
-# 🎮 FGC – FIAP Cloud Games
-
-Repositório oficial do **FIAP Cloud Games (FGC)**, API backend desenvolvida em **.NET 8** como parte do **Tech Challenge FIAP – Fase 1** da FIAP.
+Repositório oficial do **FIAP Cloud Games (FGC)**, API backend desenvolvida em **.NET 9** como parte do **Tech Challenge FIAP – Fase 3** da FIAP.
 
 ## 📦 Visão Geral
 
-O **FGC** simula uma **loja virtual de jogos digitais** com recursos completos de autenticação, catálogo, promoções e bibliotecas de jogos por usuário.
+O **FGC** simula uma **loja virtual de jogos digitais** com recursos completos de autenticação, catálogo, e bibliotecas de jogos por usuário.
 
 ### Funcionalidades:
 
@@ -20,7 +18,7 @@ O **FGC** simula uma **loja virtual de jogos digitais** com recursos completos d
 
 ## ⚙️ Tecnologias Utilizadas
 
-- [.NET 8 (C#)](https://learn.microsoft.com/en-us/dotnet/)
+- [.NET 9 (C#)](https://learn.microsoft.com/en-us/dotnet/)
 - [Entity Framework Core](https://learn.microsoft.com/en-us/ef/core/)
 - [SQL Server](https://www.microsoft.com/en-us/sql-server/)
 - [JWT Bearer Authentication](https://jwt.io/)
@@ -45,7 +43,7 @@ dotnet restore
 Alterar no Arquivo AppsettingsDevelop.json
 
 "ConnectionStrings": {
-  "DefaultConnection": "Server=localhost,1433;Database=FGC_Games;User Id=seu_usuario;Password=sua_senha_segura;TrustServerCertificate=True;"
+  "DefaultConnection": "Server=localhost,1433;Database=dbpayments;User Id=seu_usuario;Password=sua_senha_segura;TrustServerCertificate=True;"
 }
 
 Para rodar o projeto execute:
@@ -63,18 +61,6 @@ usernew@fiapgames.com (Usuário comum)
 
 4 títulos com nome, categoria e preço
 
-####  🛍️ Promoções
-
-3 promoções com datas de validade
-
-####  📚 Bibliotecas
-
-Uma biblioteca para cada usuário
-
-####  🧾 LibraryGames
-
-Registros de jogos comprados, com preço pago e data de compra
-
 ## 🔐 Credenciais de Acesso
 
 ####   👤 Usuário Comum
@@ -88,10 +74,6 @@ Senha: 1GamesTeste@
 Email: adminnew@fiapgames.com
 
 Senha: 1GamesAdmin@
-
-##  📄 Documentação
-
-🛠️ Event Storming: https://miro.com/app/board/uXjVJXr1M14=/
 
 ##  🐳 Rodando a Aplicação com docker
 Rode no console:
